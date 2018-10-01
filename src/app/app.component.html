@@ -1,4 +1,21 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p> 
+<div>
+
+  <div class="margin">
+    <br>
+    <form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+      <label for="startDateInput" >Start Date:</label><br>
+      <input type="text" id="startDateInput" name="startDate" ngModel><br>
+      <label for="numberOfDaysInput" >Number of days:</label><br>
+      <input type="text" id="numberOfDaysInput" name="numberOfDays" ngModel><br>
+      <label for="countryCodeInput" >Country Code:</label><br>
+      <input type="text" id="countryCodeInput" name="countryCode" ngModel><br><br>
+      <button type="submit" > Render calendar </button>
+    </form>
+  <div>
+
+  <calendar #cal></calendar>
+
+</div>
+
+
+
