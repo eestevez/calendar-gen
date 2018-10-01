@@ -1,1 +1,12 @@
 /* Add application styles & imports to this file! */
+table {
+  width: 28%;
+}
+th, td {
+  width: 4%;
+  text-align: center;
+}
+
+.margin {
+  margin-left: 5em;
+}
